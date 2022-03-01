@@ -2,3 +2,4 @@
 **/obj
 .devcontainer
 .ionide
+.fake

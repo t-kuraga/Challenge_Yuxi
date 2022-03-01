@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locations.API", "Locations.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locations.Services", "Locations.Services\Locations.Services.csproj", "{C2840A1F-3E15-4D0E-ABC9-FAB974781F83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locations.Repositories", "Locations.Repositories\Locations.Repositories.csproj", "{0136FBDA-579C-464C-AA9E-2E8621414327}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locations.Repositories.CsvFile", "Locations.Repositories.CsvFile\Locations.Repositories.CsvFile.csproj", "{EDF6D1A4-7DD4-4791-9F1B-36CD3C059FCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{C2840A1F-3E15-4D0E-ABC9-FAB974781F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2840A1F-3E15-4D0E-ABC9-FAB974781F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2840A1F-3E15-4D0E-ABC9-FAB974781F83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0136FBDA-579C-464C-AA9E-2E8621414327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0136FBDA-579C-464C-AA9E-2E8621414327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0136FBDA-579C-464C-AA9E-2E8621414327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0136FBDA-579C-464C-AA9E-2E8621414327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDF6D1A4-7DD4-4791-9F1B-36CD3C059FCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDF6D1A4-7DD4-4791-9F1B-36CD3C059FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDF6D1A4-7DD4-4791-9F1B-36CD3C059FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDF6D1A4-7DD4-4791-9F1B-36CD3C059FCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

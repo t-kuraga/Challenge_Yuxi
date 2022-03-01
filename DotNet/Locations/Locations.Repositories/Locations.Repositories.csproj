@@ -1,13 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <ItemGroup>
-    <ProjectReference Include="..\Locations.Repositories\Locations.Repositories.csproj" />
-  </ItemGroup>
-
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
 </Project>
