@@ -28,7 +28,7 @@
             "preLaunchTask": "build",
             "program": "${workspaceFolder}/DotNet/Locations/Locations.API/bin/Debug/net6.0/Locations.API.dll",
             "args": [],
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/DotNet/Locations/Locations.API",
             "console": "internalConsole",
             "stopAtEntry": false
         },

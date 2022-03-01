@@ -30,6 +30,7 @@ namespace Locations.Services
         /// <param name="to">Availability lower limit</param>
         /// <returns>Locations</returns>
         public IEnumerable<Locations.Services.Domain.ILocationDto> GetLocationsByAvailableTime(DateTime from, DateTime to) =>
+            // Get locations that are open between the selected range
             _repository.GetLocations(l => l.OpenFrom <= from && l.OpenTo <= to)
             .Select(l => new LocationDto(l.Id, l.Name, l.Address, l.OpenFrom, l.OpenTo));
     }
