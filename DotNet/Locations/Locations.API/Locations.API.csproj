@@ -6,6 +6,9 @@
     <ProjectReference Include="..\Locations.Repositories.CsvFile\Locations.Repositories.CsvFile.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <InternalsVisibleTo Include="..\Locations.Tests\Locations.Tests.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <None Update="./src/Stores.csv" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
   <PropertyGroup>

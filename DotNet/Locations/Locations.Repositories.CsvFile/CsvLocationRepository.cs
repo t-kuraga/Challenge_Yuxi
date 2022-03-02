@@ -27,6 +27,16 @@ namespace Locations.Repositories.CsvFile
         /// <summary>
         /// Constructor
         /// </summary>
+        /// <param name="data">Raw Data</param>
+        public CsvLocationRepository(IEnumerable<ILocationDto> data)
+        {
+            _filePath = "";
+            _data = data;
+        }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
         /// <param name="fullFilePath">Full file path</param>
         public CsvLocationRepository(string fullFilePath)
         {

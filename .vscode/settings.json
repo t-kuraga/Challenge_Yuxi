@@ -1,4 +1,5 @@
 {
     "editor.semanticHighlighting.enabled": true,
     "csharp.semanticHighlighting.enabled": true,
+    "dotnet-test-explorer.testProjectPath": "**/*.sln"
 }

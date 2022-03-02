@@ -43,3 +43,7 @@ app.MapGet("/locations/available", (int? from, int? to,
 }).WithName("GetLocationsByAvailableTime");
 
 app.Run();
+/// <summary>
+/// Partial class for testing
+/// </summary>
+public partial class Program { }
