@@ -3,3 +3,4 @@
 .devcontainer
 .ionide
 .fake
+**/node_modules
