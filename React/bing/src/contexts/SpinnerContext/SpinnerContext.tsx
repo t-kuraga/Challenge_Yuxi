@@ -13,14 +13,14 @@ export interface SpinnerProviderProps {
 /**
  * Spinner context
  */
-const SpinnerContext = React.createContext<SpinnerManager | null>(null);
+const SpinnerContext = React.createContext<SpinnerManager>(undefined!);
 
 
 /**
 * Spinner hook
-* @returns Authentication context
+* @returns Spinner context
 */
-export function useSpinner(): SpinnerManager | null {
+export function useSpinner(): SpinnerManager {
   return useContext(SpinnerContext)
 }
 
@@ -30,8 +30,8 @@ export function useSpinner(): SpinnerManager | null {
  */
 export default function SpinnerProvider({ children }: SpinnerProviderProps) {
   const { t } = useTranslation();
-  const [showSpinner, setShowSpinner] = useState(true);
-  const [hideContent, setHideContent] = useState(true);
+  const [showSpinner, setShowSpinner] = useState(false);
+  const [hideContent, setHideContent] = useState(false);
   const [msg, setMessage] = useState<string>(t("Loading..."))
 
   // Context value

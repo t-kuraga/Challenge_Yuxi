@@ -20,12 +20,8 @@ jest.mock('../../components/LoadingPane/LoadingPane.lazy',
 describe('<SpinnerContext />', () => {
     test('it should mount', () => {
         render(<SpinnerProvider>Fake Content</SpinnerProvider>);
-
-        const loadingPane = screen.getByTestId('fakeLoadingPane');
         const contentContainer = screen.getByTestId('ContentContainer');
-
-        expect(loadingPane).toBeInTheDocument();
-        expect(contentContainer).toHaveStyle({ display: 'none' });
+        expect(contentContainer).toHaveStyle({ display: 'block' });
     });
 
     test('it should hide spinner', async () => {

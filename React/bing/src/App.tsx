@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './i18n.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
+import SpinnerProvider from './contexts/SpinnerContext/SpinnerContext';
+import SearchProvider from './contexts/SearchContext/SearchContext';
+import Layout from './components/Layout/Layout.lazy';
+import SearchForm from './components/SearchForm/SearchForm.lazy';
+import SearchResultsList from './components/SearchResultsList/SearchResultsList.lazy';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="App">
+      <SpinnerProvider>
+        <SearchProvider>
+          <Layout>
+              <SearchForm />
+              <SearchResultsList />
+          </Layout>
+        </SearchProvider>
+      </SpinnerProvider>
+    </Container>
   );
 }
 

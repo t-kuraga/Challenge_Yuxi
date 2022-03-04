@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import styles from './LoadingPane.module.scss';
+import styles from './LoadingPane.module.css';
 import Spinner from "react-bootstrap/Spinner";
 import LoadingPaneProps from './LoadingPaneProps';
 
